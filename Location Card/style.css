@@ -1,0 +1,205 @@
+/*CSS Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+/*---------------Page Styles---------------*/
+
+body{
+  width: 100%;
+  min-height: 700px;
+
+  background-image: url(city.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+
+  font-family: 'Martel Sans', sans-serif;
+}
+
+div.gray-overlay{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+
+  width: 100%;
+  height: 700px;
+
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+
+/*--------------Main Styles------------------*/
+
+main{
+  display: inline-block;
+
+  /*  http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/  */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background: white;
+
+  width: 80%;
+  height: 500px;
+
+  border-radius: 10px;
+}
+
+
+
+section.left-card{
+  background-image: url(city.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  height: 500px;
+  width: 60%;
+  display: inline-block;
+  float: left;
+
+}
+
+div.internal-gray-overlay{
+    display: inline-block;
+    width: 100%;
+    height: 500px;
+
+    border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5));
+}
+
+section.left-card h1{
+  width: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 5.5em;
+
+  margin-top: 240px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+section.hashtags{
+
+    margin-left: 20px;
+    text-align: left;
+    height: 50px;
+}
+
+section.hashtags p{
+  color: #E3E4E6;
+  font-size: 0.6em;
+  display: inline-block;
+  margin-right: 5px;
+
+  /*  http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/  */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+
+
+
+section.right-card{
+  padding-top: 40px;
+
+  padding-right: 20px;
+  padding-left: 20px;
+
+  display: inline-block;
+  box-sizing: border-box;
+  width: 40%;
+
+  text-align: left;
+
+}
+
+/*
+section.right-card h1{
+  margin-bottom: 10px;
+}
+*/
+
+section.right-card p.subtitle{
+  color: #2BBEEE;
+  font-size: 0.7em;
+
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+section.right-card p{
+  font-size: 0.9em;
+  line-height: 1.5;
+  color: gray;
+}
+
+section.right-card > img{
+  height: 70px;
+  width: auto;
+  margin-left: -20px;
+}
