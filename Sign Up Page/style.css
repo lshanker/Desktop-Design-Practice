@@ -1,0 +1,235 @@
+/*CSS Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+/*----------------Page Styles---------------*/
+
+html{
+  background-color: #4D515E;
+
+  text-align: center;
+}
+
+body{
+  width: 70%;
+  height: 550px;
+  display: inline-block;
+
+  background: white;
+
+  margin-top: 100px;
+
+  border-radius: 5px;
+
+  box-shadow: 0 15px 150px 5px #2a2a2b;
+}
+
+
+
+/*-------------Main Content Styles---------------*/
+
+body section.city{
+  background-image: url(city.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+
+  width: 30%;
+  height: 550px;
+
+  display: inline-block;
+  float: right;
+
+  margin-top: -590px;
+
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+main{
+  width: 70%;
+  height: 550px;
+
+  margin-right: 0;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  display: block;
+}
+
+main article{
+  padding-left: 70px;
+  padding-right: 100px;
+
+  margin-top: 40px;
+}
+
+article h2{
+  text-align: left;
+
+  margin-bottom: 15px;
+
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 0.8em;
+
+  color: gray;
+}
+
+article h1{
+  text-align: left;
+
+  font-family: 'Quicksand', sans-serif;
+
+  font-size: 3em;
+  font-weight: 100;
+
+  margin-bottom: 20px;
+}
+
+article > p{
+  text-align: left;
+
+  font-family: 'Quicksand', sans-serif;
+
+  line-height: 2;
+  font-size: 0.75em;
+
+  width: 85%;
+
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+section.sign-up-button{
+  width: 85%;
+  height: 50px;
+
+  margin-bottom: 20px;
+
+  border-radius: 8px;
+
+  border: 1px solid gray;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+
+  box-shadow: 0 0px 0px 0px #d1d1d1;
+
+
+  transition: border 0.4s, box-shadow 0.4s;
+}
+
+section.sign-up-button:hover{
+  border: 1px solid transparent;
+  box-shadow: 0 10px 50px 2px #d1d1d1;
+
+  transition: 0.2s;
+}
+
+section.sign-up-button img{
+  width: 7%;
+  margin-left: 6%;
+}
+
+section.sign-up-button p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  font-weight: bold;
+
+  margin-left: -6%;
+}
+
+
+
+
+section.footer{
+  width: 100%;
+  text-align: left;
+
+  margin-top: 80px;
+
+}
+
+section.footer p{
+    font-size: 0.9em;
+    font-family: 'Quicksand', sans-serif;
+
+    display: inline-block;
+    margin-right: 13%;
+}
+
+#email{
+    font-family: 'Montserrat', sans-serif;
+    color: #BDDA8B;
+    font-weight: bold;
+
+    font-size: 0.8em;
+
+    display: inline-block;
+
+    cursor: pointer;
+}
