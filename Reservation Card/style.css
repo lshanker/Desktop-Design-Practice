@@ -71,6 +71,7 @@ main{
   text-align: center;
   width: 20%;
   height: 550px;
+	min-width: 270px;
 
   margin-top: 50px;
   margin-bottom: 50px;
@@ -95,15 +96,18 @@ header img{
 
 #back-arrow-icon{
   float: left;
+	cursor: pointer;
 }
 
 #search-icon{
   float: right;
+	cursor: pointer;
 }
 
 #restaurant{
-  border-radius: 50%;
-  border: 5px solid #474850;
+	border-radius: 50%;
+
+  border: 6px solid #474850;
 
   box-shadow: 0 10px 45px 1px #a8abaf;
 
@@ -136,22 +140,42 @@ main article p{
 }
 
 section.number-guests{
-  width: 50%;
+  width: 100%;
 
   margin-top: 20px;
   margin-bottom: 20px;
 
   text-align: center;
 
-  display: inline-block;
+  display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+main article img{
+  width: 5%;
+  height: auto;
+
+  display: block;
+
+	cursor: pointer;
+}
+
+main article img:hover{
+	width: 8%;
+	transition: 0.2s;
 }
 
 #plus-icon{
-  float: right;
+	order: 3;
+	margin-right: 60px;
 }
 
 #minus-icon{
-  float: left;
+		order: 1;
+		margin-left: 60px;
 }
 
 p.large-number{
@@ -160,13 +184,8 @@ p.large-number{
   color: #5E606A;
   font-weight: bold;
   font-size: 4em;
-}
 
-main article img{
-  width: 10%;
-  height: auto;
-
-  display: block;
+	order: 2;
 }
 
 main article time{
@@ -187,6 +206,15 @@ section.button{
   background-color:  #474850;
 
   box-shadow: 0 10px 45px 1px #a8abaf;
+
+	cursor: pointer;
+
+	border: 1px solid transparent;
+}
+
+section.button:hover{
+	transition: 0.2s;
+	background-color:  #686a75;
 }
 
 section.button p{
